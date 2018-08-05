@@ -3,8 +3,10 @@
   "version": "3.0.2",
   "description": "Design system utilities for styled-components, glamorous, and other css-in-js libraries",
   "main": "dist/index.js",
+  "sourc": "src/index.js",
   "sideEffects": false,
   "scripts": {
+    "build": "microbundle",
     "prepare": "babel src -d dist",
     "start": "x0 docs",
     "docs": "x0 build docs -d site",
@@ -40,6 +42,7 @@
     "codecov": "^3.0.3",
     "is-ci": "^1.1.0",
     "lodash.sortby": "^4.7.0",
+    "microbundle": "^0.6.0",
     "nyc": "^12.0.2",
     "react": "^16.4.0",
     "react-test-renderer": "^16.4.0",
